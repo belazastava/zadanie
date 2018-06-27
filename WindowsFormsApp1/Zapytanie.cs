@@ -70,6 +70,37 @@ namespace WindowsFormsApp1
         [DataMember]
         public string wyslano { get; set; }
 
+
+        /*public Zapytanie()
+        {
+            this.id = "Id";
+            this.firma = "Firma";
+            this.plec = "Pan_Pani";
+            this.imie = "Imie";
+            this.nazwisko = "Nazwisko";
+            this.email = "E-mail";
+            this.kod_pocztowy = "Kod_pocztowy";
+            this.miejscowosc = "Miejscowosc";
+            this.ulica_nr = "Ulica_nr";
+            this.kraj = "Kraj";
+            this.telefon = "Telefon";
+            this.katalogi = "Katalogi";
+            this.droga_kontaktu = "Droga_kontaktu";
+            this.rodzaj_podmiotu = "Rodzaj_podmiotu";
+            this.zgoda_jedn = "Zgoda_jedn";
+            this.zgoda_jedn_tresc = "Zgoda_jedn_tresc";
+            this.zgoda_wielo = "Zgoda_wielo";
+            this.zgoda_wielo_tresc = "Zgoda_wielo_tresc";
+            this.wyslano = "Wyslano";
+        }*/
+
+        public override string ToString()
+        {
+            return "Firma: " + this.firma
+                 + Environment.NewLine + "Imię: " + this.imie
+                  + Environment.NewLine + "Nazwisko: " + this.nazwisko;
+        }
+
         /*public static void PobierzDanePost()
         {
             //pobieranie danych metoda POST
@@ -83,7 +114,6 @@ namespace WindowsFormsApp1
         }*/
     }
 
-    [DataContract]
     public class Zapytania : List<Zapytanie>
     {
 
